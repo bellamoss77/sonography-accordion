@@ -1,0 +1,98 @@
+@import url("https://use.typekit.net/seh6wxs.css");
+* {
+  font-family: "sofia-pro", sans-serif;
+}
+
+.item {
+  border-bottom: 1px solid #555;
+}
+.item:last-child {
+  border-bottom: none;
+}
+.item .section-header {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(0, 51, 141);
+  cursor: pointer;
+}
+.item.active .section-header,
+.item .section-header:hover {
+  color: rgb(136, 35, 69);
+}
+.item .section-content {
+  height: 0;
+  overflow: hidden;
+  width: 80%;
+  margin-left: 25px;
+}
+.item .section-content p {
+  margin: 0;
+  padding: 1rem;
+}
+.item .table-container {
+  width: 50%;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-collapse: collapse;
+}
+.item .table-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.item .table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.item .table-container table, .item .table-container table th, .item .table-container table td {
+  border: 1px solid black;
+}
+.item .table-container table th, .item .table-container table td {
+  padding: 5px;
+  text-align: center;
+}
+.item .table-container table thead {
+  background-color: #a3a3a3;
+}
+.item .sub-item {
+  width: 75%;
+  margin-left: 25px;
+}
+.item .sub-item:last-child {
+  border-bottom: none;
+}
+.item .sub-title {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: rgb(0, 51, 141);
+}
+.item.active .sub-title,
+.item .sub-title:hover {
+  cursor: pointer;
+}
+.item .sub-content {
+  height: 0;
+  text-align: start;
+  margin: auto;
+  overflow: hidden;
+}
+.item .sub-content p {
+  margin: 0;
+  padding: 1rem;
+}
+.item .sub-content:last-child {
+  margin-bottom: 25px;
+}
+
+p {
+  margin: 25px auto;
+}/*# sourceMappingURL=styles.css.map */

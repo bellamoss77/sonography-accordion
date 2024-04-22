@@ -1,0 +1,104 @@
+@import url("https://use.typekit.net/seh6wxs.css");
+
+$sofiaPro: "sofia-pro", sans-serif;
+
+* {
+    font-family: $sofiaPro;
+}
+
+.item {
+    border-bottom: 1px solid #555;
+
+    &:last-child {
+        border-bottom: none;
+    }
+    .section-header {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        padding: 1rem;
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: rgb(0, 51, 141);
+        cursor: pointer;
+
+    }
+    &.active .section-header,
+    .section-header:hover {
+        color: rgb(136, 35, 69);
+    }
+    .section-content {
+        height: 0;
+        overflow: hidden;
+        width: 80%;
+        margin-left: 25px;
+        p {
+            margin: 0;
+            padding: 1rem;
+        }
+    }
+    .table-container {
+        width: 50%;
+        max-width: 400px;
+        margin: 0 auto;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-collapse: collapse;
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            &, th, td {
+                border: 1px solid black;
+            }
+            th, td {
+                padding: 5px;
+                text-align: center;
+            }
+            thead {
+                background-color: #a3a3a3;
+            }
+        }
+    }
+    .sub-item {
+        width: 75%;
+        margin-left: 25px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    .sub-title {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: rgb(0, 51, 141);
+    }
+    &.active .sub-title,
+    .sub-title:hover {
+        cursor: pointer;
+    }
+    .sub-content {
+        height: 0;
+        text-align: start;
+        margin: auto;
+        overflow: hidden;
+        p {
+            margin: 0;
+            padding: 1rem;
+        }
+        &:last-child {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+p {
+    margin: 25px auto;
+}
